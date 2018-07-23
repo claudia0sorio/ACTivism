@@ -9,7 +9,14 @@ jinja_current_dir = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class MainHandler(webapp2.RequestHandler):
+class CalendarHandler(webapp2.RequestHandler):
+    def get(self):
+
+
+
+
+
+class HomePageHandler(webapp2.RequestHandler):
     def get(self):
 
 
@@ -20,9 +27,8 @@ class MainHandler(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-    ('/aboutme', AboutMeHandler),
-    ('/posts', PostsHandler),
+    ('/calendar', CalendarHandler),
+    ('/', HomePageHandler),
 ], debug=True)
 
 
