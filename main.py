@@ -4,32 +4,20 @@ import os
 import jinja2
 from google.appengine.ext import ndb
 
+
+
 jinja_current_dir = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class CalendarHandler(webapp2.RequestHandler):
-    def get(self):
 
 
 
-
-
-class HomePageHandler(webapp2.RequestHandler):
-    def get(self):
-
-
-
-
-
-
-
-
-app = webapp2.WSGIApplication([
-    ('/calendar', CalendarHandler),
-    ('/', HomePageHandler),
-], debug=True)
+# app = webapp2.WSGIApplication([
+    # ('/calendar', CalendarHandler),
+    # ('/', HomePageHandler),
+# ], debug=True)
 
 
 
