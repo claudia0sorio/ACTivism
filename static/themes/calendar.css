@@ -2,6 +2,31 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
+header
+{
+  background-color: lightblue;
+  padding: 8px 20px;
+  display: flex;
+
+}
+.page-title
+{
+  margin: 0;
+}
+
+.spacer
+{
+  flex-grow: 1;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
 .month {
     padding: 70px 25px;
     width: 100%;
