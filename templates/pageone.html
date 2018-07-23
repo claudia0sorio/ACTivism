@@ -1,0 +1,19 @@
+{% get_calendar for <month_number_or_variable> <year_or_variable> as calendar %}
+<table>
+    <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+    </tr>
+    {% for week in calendar %}
+    <tr>
+        {% for day in week %}
+        <td>{{ day.day }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
