@@ -20,6 +20,4 @@ class MainHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/aboutme', AboutMeHandler),
-    ('/posts', PostsHandler),
 ], debug=True)
