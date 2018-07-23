@@ -13,11 +13,11 @@ jinja_current_dir = jinja2.Environment(
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-<<<<<<< HEAD
+
         template= jinja_current_dir.get_template('templates/calendar.html')
-=======
+
         template= jinja_current_dir.get_template('/templates/calendar.html')
->>>>>>> 7dd0b567ce9a11b042825244512bd0b2952d1ed0
+
         self.response.write(template.render())
 
 
