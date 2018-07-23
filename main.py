@@ -4,18 +4,23 @@ import os
 import jinja2
 from google.appengine.ext import ndb
 
+<<<<<<< HEAD
 from django import template
 
 from calendar import Calendar
 import datetime
 
 import re
+=======
+
+>>>>>>> 3714e49e0c603a8921bfdb94994f70cb6e9f2829
 
 jinja_current_dir = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
+<<<<<<< HEAD
 
 register = template.Library()
 
@@ -64,6 +69,15 @@ app = webapp2.WSGIApplication([
     ('/calendar', CalendarHandler),
     ('/', HomePageHandler),
 ], debug=True)
+=======
+
+
+
+# app = webapp2.WSGIApplication([
+    # ('/calendar', CalendarHandler),
+    # ('/', HomePageHandler),
+# ], debug=True)
+>>>>>>> 3714e49e0c603a8921bfdb94994f70cb6e9f2829
 
 
 
