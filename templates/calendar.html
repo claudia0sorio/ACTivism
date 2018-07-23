@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="/static/themes/calendar.css">
-</head>
-<body>
+<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
 
+<<<<<<< HEAD
   <header>
     <h1 class="page-title">Cool CSS</h1>
     <p class="spacer"></p>
@@ -13,61 +11,28 @@
       <a class = "navlinks" href="google.com">Calendar</a>
     </nav>
   </header>
+=======
+<script>
+YUI().use('calendar', function (Y) {
+>>>>>>> 1f5bece821d2cd8923f87fb6cc5b3588f210843d
 
-<div class="month">
-  <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
-    <li>
-      August<br>
-      <span style="font-size:18px">2017</span>
-    </li>
-  </ul>
-</div>
+});
+</script>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
+<body class="yui3-skin-sam">
 
-<ul class="days">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li><span class="active">10</span></li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
+<script>
+YUI().use('calendar', function (Y) {
 
+  var calendar = new Y.Calendar({
+          contentBox: "#mycalendar",
+          height:'300px',
+          width:'600px',
+          showPrevMonth: true,
+          showNextMonth: true,
+          date: new Date(1982,11,1)}).render();
+
+});
+</script>
 </body>
 </html>
