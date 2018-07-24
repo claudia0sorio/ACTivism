@@ -1,7 +1,5 @@
-.textwidget
+#calendar
 {
-border-width:0;
-width:"800px";
-height:"600px";
-scrolling:"no";
+  width: 1300px;
+  height: 600px;
 }
