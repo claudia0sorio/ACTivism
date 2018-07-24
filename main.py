@@ -30,5 +30,5 @@ class AboutUsHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/calendar', MainHandler),
     ('/', HomePageHandler),
-    ('/aboutus', AboutUsHandler),
+    ('/about_us', AboutUsHandler),
 ], debug=True)
