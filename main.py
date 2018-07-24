@@ -11,11 +11,19 @@ jinja_current_dir = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class MainHandler(webapp2.RequestHandler):
+class CalendarHandler(webapp2.RequestHandler):
     def get(self):
         template= jinja_current_dir.get_template('templates/calendar.html')
-
+        name=self.request.get('name')
+        email=self.request.get('email')
+        organization=self.request.get('organization')
+        template_vars={'name':name,
+            'email':email,
+            'organization': organization
+            }
         self.response.write(template.render())
+        self.response.write(template.render(template_vars))
+
 class HomePageHandler(webapp2.RequestHandler):
     def get(self):
         template= jinja_current_dir.get_template('templates/home.html')
@@ -28,7 +36,7 @@ class AboutUsHandler(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/calendar', MainHandler),
+    ('/calendar', CalendarHandler),
     ('/', HomePageHandler),
     ('/about_us', AboutUsHandler),
 ], debug=True)

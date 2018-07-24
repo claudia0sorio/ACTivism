@@ -19,9 +19,27 @@
     <iframe id="calendar" src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=activismcssi%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York">
     </iframe>
   </div>
+
+<div>
   <div>
     <p>Have an event you'd like to add? Enter the details of the event here. By pressing submit your form will be sent to our editors for approval.</p>
+    <form method="post">
+  <div>
+    Enter your name:
+    <input type="text" name="name" placeholder="Enter your first and last name">
+  </div>
+  <div>
+    Enter your email:
+    <input type="email" name="email" placeholder="Enter your email">
+  </div>
+  <div>
+    Enter your organization:
+    <input type="text" name="organization" placeholder="Enter the organization/movement you are associated with">
+  </div>
+
     <textarea onkeydown="textCounter(this,'q17length',500);" onkeyup="textCounter(this,'q17length',500)" class="scanwid" id="q17" maxlength="500" name="content1" cols="80" rows="10" size:"25"="" placeholder="Type your event details here"></textarea>
   </div>
+<button type="submit">Submit</button>
+</div>
 </body>
 </html>
