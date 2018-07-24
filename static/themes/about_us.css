@@ -7,7 +7,48 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+header, header *
+{
+  /* border: 1px solid purple; */
+}
 
+header
+{
+  background-color: lightpink;
+  padding: 8px 20px;
+
+
+
+  display: flex;
+
+}
+
+.page-title
+{
+  margin: 0;
+  font-style: italic;
+}
+
+.spacer
+{
+  flex-grow: 1;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.navlinks
+{
+  height: fit-content;
+  color: black;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
 .spacer
 {
   display: flex;
