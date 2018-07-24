@@ -14,15 +14,19 @@ jinja_current_dir = jinja2.Environment(
 class CalendarHandler(webapp2.RequestHandler):
     def get(self):
         template= jinja_current_dir.get_template('templates/calendar.html')
-        name=self.request.get('name')
-        email=self.request.get('email')
-        organization=self.request.get('organization')
-        template_vars={'name':name,
-            'email':email,
-            'organization': organization
-            }
         self.response.write(template.render())
-        self.response.write(template.render(template_vars))
+
+
+    def post(self):
+            name=self.request.get('name')
+            email=self.request.get('email')
+            organization=self.request.get('organization')
+            template_vars={'name':name,
+                'email':email,
+                'organization': organization
+                        }
+            template= jinja_current_dir.get_template('templates/submit.html')
+            self.response.write(template.render(template_vars))
 
 class HomePageHandler(webapp2.RequestHandler):
     def get(self):
