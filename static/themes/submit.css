@@ -1,0 +1,59 @@
+html
+{
+  background-color: lightpink;
+}
+
+header, header *
+{
+  /* border: 1px solid purple; */
+}
+
+header
+{
+  background-color: lightpink;
+  padding: 8px 20px;
+
+
+
+  display: flex;
+
+}
+
+.navlinks
+{
+  height: fit-content;
+  color: black;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.page-title
+{
+  margin: 0;
+  font-style: italic;
+}
+
+.spacer
+{
+  flex-grow: 1;
+}
+
+.sidespacer
+{
+  flex-grow: 1;
+  width: 5px;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+
+#submission
+{
+  font-size: 25px;
+}
