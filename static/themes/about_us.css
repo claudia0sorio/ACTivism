@@ -4,7 +4,7 @@ html {
   background-color: lightpink;
 }
 
-<<<<<<< HEAD
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -50,19 +50,11 @@ nav
   font-size: 22px;
   font-family: "Courier New", Courier, monospace;
 }
-.spacer
-{
-  display: flex;
-  flex-grow: 1;
-  border: 1px solid purple;
 
 
-}
 
-
-=======
 /* Three columns side by side */
->>>>>>> 41933e16f888d3685b5e92c5b33a01a6946d2385
+
 .column {
     float: left;
     width: 33.3%;
