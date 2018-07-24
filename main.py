@@ -16,11 +16,15 @@ class MainHandler(webapp2.RequestHandler):
 
         template= jinja_current_dir.get_template('templates/calendar.html')
 
-
+        self.response.write(template.render())
+class HomePageHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_current_dir.get_template('templates/home.html')
         self.response.write(template.render())
 
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
+    ('/calendar', MainHandler),
+    ('/', HomePageHandler),
 ], debug=True)
