@@ -1,11 +1,22 @@
-<style>
+
 html {
   box-sizing: border-box;
+  background-color: lightpink;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.spacer
+{
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid purple;
+
+
+}
+
 
 .column {
   float: left;
@@ -54,4 +65,9 @@ html {
 .button:hover {
   background-color: #555;
 }
-</style>
+
+h2
+{
+
+  color: black;
+}
