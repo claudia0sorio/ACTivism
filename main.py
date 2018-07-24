@@ -14,7 +14,7 @@ jinja_current_dir = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
-        template= jinja_current_dir.get_template('templates/calendar2.html')
+        template= jinja_current_dir.get_template('templates/calendar.html')
 
 
         self.response.write(template.render())
