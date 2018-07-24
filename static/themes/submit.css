@@ -12,11 +12,7 @@ header
 {
   background-color: lightpink;
   padding: 8px 20px;
-
-
-
   display: flex;
-
 }
 
 .navlinks
@@ -36,24 +32,31 @@ header
 .spacer
 {
   flex-grow: 1;
+
 }
 
 .sidespacer
 {
   flex-grow: 1;
-  width: 5px;
+
+  width: 10px;
 }
 
 nav
 {
   display: flex;
   align-items: center;
-  width: 200px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
 #submission
 {
   font-size: 25px;
+}
+
+
+.confirmation
+{
+  text-align:center;
 }
