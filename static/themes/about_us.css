@@ -53,13 +53,19 @@ nav
 
 
 
-/* Three columns side by side */
+/* two columns side by side */
 
 .column {
     float: left;
     width: 49.5%;
     margin-bottom: 16px;
     padding: 0 8px;
+}
+
+img
+{
+
+  overflow: hidden;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
