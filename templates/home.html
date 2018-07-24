@@ -32,6 +32,7 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
+    height: 600px;
   }
 
   /* Next & previous buttons */
@@ -60,17 +61,6 @@
     background-color: rgba(0,0,0,0.8);
   }
 
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
@@ -79,6 +69,11 @@
     position: absolute;
     top: 0;
   }
+  /* Womens march photo */
+#womens
+{
+  height: 600px;
+}
 
   /* The dots/bullets/indicators */
   .dot {
@@ -126,20 +121,20 @@
 <div><p></p></div>
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="https://dailygazette.com/sites/default/files/styles/article_image/public/2017%2BYEAREND%2BNEWS%2B18.JPG?itok=XOQo-e1u" style="width:100%">
-    <div class="text">Women's March</div>
+    <img id="womens"  src="https://dailygazette.com/sites/default/files/styles/article_image/public/2017%2BYEAREND%2BNEWS%2B18.JPG?itok=XOQo-e1u" style="width:100%">
+
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/4fc91224_958d_4c58_9d27_727b1d29182b_83e0bb13-6e83-4d9c-9fa7-aff6b17d27b9.jpg" style="width:100%">
-    <div class="text">PRIDE</div>
+    <img src="https://www.dailywire.com/sites/default/files/styles/article_full/public/uploads/2018/06/love.jpg?itok=-p_OdrZn" style="width:100%">
+
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="https://cdn.cnn.com/cnnnext/dam/assets/170422110138-12-march-for-science-0422-super-169.jpg" style="width:100%">
-    <div class="text">March for Science</div>
+
   </div>
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
