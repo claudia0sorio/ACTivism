@@ -1,0 +1,38 @@
+/* Nav Bar example */
+header, header *
+{
+  /* border: 1px solid purple; */
+}
+
+header
+{
+  background-color: lightblue;
+  padding: 8px 20px;
+
+
+  display: flex;
+
+}
+
+.page-title
+{
+  margin: 0;
+}
+
+.spacer
+{
+  flex-grow: 1;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.navlinks
+{
+  height: fit-content;
+}
