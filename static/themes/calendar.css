@@ -1,3 +1,13 @@
+html
+{
+  background-color: lightpink;
+}
+
+#addevent
+{
+  font-size: 20px;
+}
+
 #calendar
 {
   width: 1300px;
