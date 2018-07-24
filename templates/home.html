@@ -5,7 +5,33 @@
 </head>
 
 <body>
+<script>var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 <header>
   <h1 class="page-title">ACTivism</h1>
   <p class="spacer"></p>
@@ -17,19 +43,19 @@
 <div class="slideshow-container">
 
   <!-- Full-width slides/quotes -->
-  <div class="mySlides">
-    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-    <p class="author">- John Keats</p>
+  <div>
+    <img src="https://dailygazette.com/sites/default/files/styles/article_image/public/2017%2BYEAREND%2BNEWS%2B18.JPG?itok=XOQo-e1u"/>
+    <center><p class="author">Women's March</p><center>
   </div>
 
-  <div class="mySlides">
-    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-    <p class="author">- Ernest Hemingway</p>
+  <div>
+    <img src="https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_510,q_75,w_1280/v1/clients/newyorkstate/4fc91224_958d_4c58_9d27_727b1d29182b_83e0bb13-6e83-4d9c-9fa7-aff6b17d27b9.jpg">
+    <center><p class="author">PRIDE</p></center>
   </div>
 
-  <div class="mySlides">
-    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-    <p class="author">- Thomas A. Edison</p>
+  <div>
+    <img src="https://cdn.cnn.com/cnnnext/dam/assets/170422110138-12-march-for-science-0422-super-169.jpg">
+    <center><p class="author">March for Science</p></center>
   </div>
 
   <!-- Next/prev buttons -->
