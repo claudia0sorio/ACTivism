@@ -38,7 +38,6 @@ header
 .sidespacer
 {
   flex-grow: 1;
-  border: 1px solid purple;
   width: 10px;
 }
 

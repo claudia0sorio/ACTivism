@@ -8,6 +8,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 header, header *
 {
   /* border: 1px solid purple; */
@@ -17,11 +18,15 @@ header
 {
   background-color: lightpink;
   padding: 8px 20px;
-
-
-
   display: flex;
+}
 
+.navlinks
+{
+  height: fit-content;
+  color: black;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .page-title
@@ -33,25 +38,22 @@ header
 .spacer
 {
   flex-grow: 1;
+
+}
+
+.sidespacer
+{
+  flex-grow: 1;
+
+  width: 10px;
 }
 
 nav
 {
   display: flex;
   align-items: center;
-  width: 200px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
-.navlinks
-{
-  height: fit-content;
-  color: black;
-  font-size: 22px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-
 
 /* two columns side by side */
 
