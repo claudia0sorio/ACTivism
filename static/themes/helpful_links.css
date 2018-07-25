@@ -70,7 +70,7 @@ nav
 .column {
     float: left;
     width: 40%;
-    border: 5px solid black;
+    border: 5.5px solid black;
 }
 
 /* Clear floats after the columns */
