@@ -66,3 +66,9 @@ nav
   font-size: 22px;
   font-family: "Courier New", Courier, monospace;
 }
+
+
+input
+{
+  font-size: 18px;
+}
