@@ -36,11 +36,15 @@ class AboutUsHandler(webapp2.RequestHandler):
     def get(self):
         template= jinja_current_dir.get_template('templates/about_us.html')
         self.response.write(template.render())
-
+class HelpfulLinksHandler(webapp2.RequestHandler):
+    def get(self):
+        template= jinja_current_dir.get_template('templates/helpful_links.html')
+        self.response.write(template.render())
 
 
 app = webapp2.WSGIApplication([
     ('/calendar', CalendarHandler),
     ('/', HomePageHandler),
     ('/about_us', AboutUsHandler),
+    ('/helpful_links', HelpfulLinksHandler)
 ], debug=True)

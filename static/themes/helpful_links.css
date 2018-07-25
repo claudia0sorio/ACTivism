@@ -38,7 +38,7 @@ header
 .sidespacer
 {
   flex-grow: 1;
-
+  border: 1px solid purple;
   width: 10px;
 }
 
@@ -47,16 +47,4 @@ nav
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-
-#submission
-{
-  font-size: 25px;
-}
-
-
-.confirmation
-{
-  text-align:center;
 }
