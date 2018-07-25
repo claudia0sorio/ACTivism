@@ -57,3 +57,11 @@ nav
 {
   font-size: 22px;
 }
+
+#widget
+{
+  float: left;
+  width: 49.5%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
