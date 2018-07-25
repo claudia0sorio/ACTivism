@@ -3,9 +3,10 @@ html
   background-color: lightpink;
 }
 
-#addevent
+#addEvent
 {
-  font-size: 20px;
+  font-size: 22px;
+  
 }
 
 #calendar
