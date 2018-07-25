@@ -41,6 +41,16 @@ header
   width: 10px;
 }
 
+.widgetspacer
+{
+  flex-grow: 1;
+  width: 150px;
+  height: 1545px;
+  /* border: 1px solid purple; */
+  float: left;
+
+}
+
 nav
 {
   display: flex;
@@ -48,20 +58,24 @@ nav
   justify-content: space-around;
 }
 
-#awtd1532533177422
-{
-  border: 5px solid black;
-}
 
-#weather
+#text
 {
   font-size: 22px;
 }
 
-#widget
-{
-  float: left;
-  width: 49.5%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+
+
+
+.column {
+    float: left;
+    width: 40%;
+    border: 5px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
