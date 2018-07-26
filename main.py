@@ -45,11 +45,15 @@ class PostWallHandler(webapp2.RequestHandler):
         template= jinja_current_dir.get_template('templates/post_wall.html')
         self.response.write(template.render())
 
-
 app = webapp2.WSGIApplication([
     ('/calendar', CalendarHandler),
     ('/', HomePageHandler),
     ('/about_us', AboutUsHandler),
+<<<<<<< current
     ('/helpful_links', HelpfulLinksHandler),
     ('/post_wall', PostWallHandler)
+=======
+    ('/helpful_links', HelpfulLinksHandler)
+
+>>>>>>> before discard
 ], debug=True)
