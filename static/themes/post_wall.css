@@ -92,3 +92,9 @@ nav
       display: block;
   }
 }
+
+img
+{
+  width: 90px;
+  height: 90px;
+}
