@@ -44,7 +44,7 @@ header
 .widgetspacer
 {
   flex-grow: 1;
-  width: 150px;
+  width: 100px;
   height: 1545px;
   /* border: 1px solid purple; */
   float: left;
@@ -66,9 +66,11 @@ nav
 
 .column {
     float: left;
-    width: 40%;
+    width: 26%;
     border: 5.5px solid black;
+    height: fit-content;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
