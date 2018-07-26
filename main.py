@@ -49,11 +49,8 @@ app = webapp2.WSGIApplication([
     ('/calendar', CalendarHandler),
     ('/', HomePageHandler),
     ('/about_us', AboutUsHandler),
-<<<<<<< current
     ('/helpful_links', HelpfulLinksHandler),
-    ('/post_wall', PostWallHandler)
-=======
+    ('/post_wall', PostWallHandler),
     ('/helpful_links', HelpfulLinksHandler)
 
->>>>>>> before discard
 ], debug=True)
