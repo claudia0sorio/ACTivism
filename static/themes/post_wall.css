@@ -51,6 +51,11 @@ nav
 }
 
 
+#connecter
+{
+  font-size: 22px;
+}
+
 /* WALL*/
 .container {
   border: 2px solid #ccc;
